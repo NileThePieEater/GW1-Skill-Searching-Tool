@@ -1,3 +1,44 @@
-<input type="text" id="mySearchBox" placeholder="Type here...">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GW1 Skilldex</title>
+</head>
+<body>
+    <div id="Home">
+        <h1 id="SiteName"><a href="index.html" style="text-decoration: none; color: inherit;">GW1 Skilldex</a></h1>
+    </div>
+    
+    <div id="search" class="center">
+        <input type="text" id="searchbar" placeholder="Wastrel's Demise.." maxlength="64">
+        <button id="searchbutton" >Search</button>
+    </div>
+<script>
+    const splashes = [
+        "Wastrel's Demise..",
+        "You own too many monks.",
+        "What are you looking at?",
+        "OooOo I'm sentient..",
+        "Search here!",
+        "Assassin's Promise!",
+        "Protective Spirit?",
+        "Maybe.. Like.. Dervish skills?",
+        "Wassup?",
+        "Having fun?",
+        "Blood for the blood gods.",
+        "Welcome! Search here.",
+        "SEARCH SEARCH SEARCH SEARCH",
+        "This text is random.",
+        "Seriously, too many monks.",
+        "Delete your monks. Pls.",
+        "Like assassins? I do."
+    ];
 
+    const randomSplash = splashes[Math.floor(Math.random() * splashes.length)];
+
+    document.getElementById('searchbar').placeholder = randomSplash;
+</script>
 </body>
+</html>
